@@ -1,65 +1,90 @@
-# Sox_Core.lean
+# Sox (Spectral Information Integrity Auditor)
 
-**Sox_Core.lean** is a formally verified Lean 4 module that defines a minimal ontological criterion
-for the existence of macroscopic coherent phases (e.g. superconductivity) based on
-*information integrity*, not microscopic mechanisms.
+This repository contains a formally verified Lean 4 implementation of **Sox**,
+a minimal ontological framework that defines necessary conditions for the existence
+of macroscopic coherent quantum phases (e.g. superconductivity).
 
-This repository contains **no dynamics, no Hamiltonians, and no material-specific models**.
-It is a logical auditor, not a constructive theory.
+Sox is **restrictive, not constructive**.
+It audits logical viability before any microscopic modeling is attempted.
 
----
-
-## What this file proves
-
-Using Lean 4, `Sox_Core.lean` formally proves the following statements:
-
-1. **Phase stability is a logical property, not an empirical signal**
-
-   A macroscopic coherent phase exists *if and only if* there exists at least one channel
-   that:
-   - satisfies an integrity condition (`satisfies_sox`)
-   - is not fragile (`¬ Fragile`)
-
-2. **Zombie phases are impossible as bulk phases**
-
-   If *all* channels that satisfy integrity are fragile, then a global phase is impossible.
-   This formally excludes phases with only local or non-extensive coherence
-   (e.g. pseudogap-like regimes).
-
-3. **Informational voids cannot host coherent phases**
-
-   If no channel satisfies the integrity condition, then phase stability is logically forbidden.
-   This captures regimes where decoherence dominates universally
-   (e.g. Planckian strange metals).
-
-These results are proven as **theorems**, not assumptions.
+No dynamics, no Hamiltonians, no material-specific assumptions are included.
 
 ---
 
-## What this file does NOT prove
+## Repository contents
 
-`Sox_Core.lean` intentionally does **not**:
+### 1. `Sox_Core.lean`
 
-- Derive superconductivity from microscopic interactions
+Defines the **core integrity criterion** for phase existence.
+
+A macroscopic coherent phase exists *if and only if* there exists at least one channel
+that:
+- satisfies an integrity condition
+- is not fragile
+
+This file formally proves:
+
+1. **Phase stability is a logical property**, not an empirical signal
+2. **Zombie phases** (local but non-extensive coherence) cannot exist as bulk phases
+3. **Informational voids** (universal decoherence dominance) forbid phase stability
+
+These results are proven as **theorems**, not postulates.
+
+---
+
+### 2. `Sox_CarrierIndependence.lean`
+
+Formalizes the **Carrier Independence Theorem**.
+
+It proves that phase solvency depends only on **integrity attributes**
+(erosion and identity), and **not** on the microscopic nature of the charge carrier
+(electron, hole, or any other quasiparticle).
+
+This establishes that:
+
+- Phase stability is a **structural property of the information channel**
+- Microscopic carrier narratives are implementations, not foundations
+- Sox is invariant under changes of hardware
+
+This module closes the dependency on particle-specific mechanisms.
+
+---
+
+## What this repository does NOT do
+
+This project intentionally does **not**:
+
+- Construct superconductivity from microscopic interactions
 - Specify pairing mechanisms (phonons, spins, geometry, etc.)
 - Predict critical temperatures or gap values
 - Model dynamics, transport, or time evolution
-- Decide which physical channel is dominant in a real material
+- Identify dominant channels in real materials
 
-All physical interpretation lies **outside** this file.
-Lean only certifies logical consistency.
+All physical interpretation lies **outside** Lean.
+Lean certifies logical consistency only.
 
 ---
 
 ## Conceptual role
 
-This module acts as a **type-level filter**:
+Sox acts as a **type-level filter**:
 
 > Any physical theory of a coherent phase must be able to instantiate
 > a non-fragile channel satisfying integrity, or the phase is logically invalid.
 
-Sox is therefore **restrictive**, not constructive.
-It eliminates impossible phases before any detailed modeling begins.
+Sox eliminates impossible phases **before** phenomenology begins.
+
+---
+
+## Status
+
+- Core axioms: frozen
+- Invariance theorems: verified
+- No adjustable parameters
+- No experimental claims
+
+This repository defines a **stable logical foundation**.
+All future extensions must preserve these theorems.
 
 ---
 
@@ -72,22 +97,18 @@ Requirements:
 
 From the project root:
 
-Status
-Core axioms: frozen
-Theorems: verified
-No experimental claims
-No adjustable parameters
-This file is intended as a stable logical core.
-Extensions (temperature operators, hierarchy, geometry, etc.) must preserve these theorems.
-
-License / Use
-Use freely for:
-formal reasoning
-theory auditing
-foundational work
-
-Misuse warning: If you treat this as a phenomenological model, you are using it incorrectly.
-
-
 ```bash
 lake build
+```
+
+---
+
+## License / Use
+
+Use freely for:
+- formal reasoning
+- theory auditing
+- foundational research
+
+**Misuse warning:**  
+If you treat this as a phenomenological or predictive model, you are using it incorrectly.
