@@ -6,6 +6,7 @@ type: software
 authors:
   - family-names: Pérez Rodríguez 
     given-names: José Michell
+    orcid: "https://orcid.org/0009-0009-8328-2392"
 version: 1.31
 date-released: 2026-01-29
 abstract: >
@@ -16,7 +17,7 @@ abstract: >
   in Lean 4 and includes a canonical falsification protocol.
 repository-code: "https://github.com/josemichellpr/sox_lean"
 license: CC-BY-ND-4.0
-doi: "PENDING"
+doi: 10.5281/zenodo.18418858
 keywords:
   - superconductivity
   - superfluidity
@@ -25,5 +26,6 @@ keywords:
   - falsifiability
   - formal verification
   - Lean 4
+
 
 
