@@ -1,0 +1,29 @@
+
+cff-version: 1.2.0
+message: "If you use, discuss, or attempt to falsify the SOX framework, please cite it as follows."
+title: "SOX Framework v1.31: Falsifiability and Audit Protocol for Information-Centric Phase Stability"
+type: software
+authors:
+  - family-names: Pérez Rodríguez 
+    given-names: José Michell
+version: 1.31
+date-released: 2026-01-29
+abstract: >
+  SOX (Solvency & Information Integrity) is a formally specified audit framework
+  for macroscopic phase stability. It establishes negative, veto-based criteria
+  for the existence of coherent phases based on information solvency and
+  incompatibility with volumetric noise. The framework is formally verified
+  in Lean 4 and includes a canonical falsification protocol.
+repository-code: "https://github.com/josemichellpr/sox_lean"
+license: CC-BY-ND-4.0
+doi: "PENDING"
+keywords:
+  - superconductivity
+  - superfluidity
+  - information theory
+  - phase stability
+  - falsifiability
+  - formal verification
+  - Lean 4
+
+
