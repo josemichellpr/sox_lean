@@ -1,0 +1,127 @@
+# AUDIT.md: Falsifiability and Audit Protocol for SOX v1.31
+
+**Version:** 1.31 (Canonical)
+
+**Status:** Frozen / Normative
+
+**Ontology:** Information-Centric Phase Integrity
+
+---
+
+## 0. Ontological Scope (Jurisdiction)
+
+To avoid categorical errors, all auditors and users of the SOX framework must adhere to the following definitions:
+
+1. **Matter as Substrate**
+   Matter (electrons, ions, lattices) constitutes the *hardware*. It is a necessary but insufficient condition for a phase.
+
+2. **Phase as Regime**
+   A macroscopic phase (e.g., superconductivity or superfluidity) is a *physically instantiated information-processing regime*. A phase exists only while it remains solvent.
+
+3. **Information as Integrity**
+   In SOX, “information” refers exclusively to the integrity of phase coherence (𝓘). It is an operational quantity, not a semantic or symbolic one.
+
+---
+
+## 1. Negative Boundaries (What SOX Is NOT)
+
+SOX does not compete with constructive theories (BCS, Hirsch, Hubbard, etc.); it audits their logical consistency.
+
+* **SOX is NOT a Hamiltonian.**
+  It does not compute energy spectra or pairing mechanisms.
+
+* **SOX is NOT phenomenology.**
+  It contains no adjustable parameters or curve fitting.
+
+* **SOX does NOT predict numerical Tc.**
+  It defines the insolvency point at which a phase must collapse.
+
+---
+
+## 2. Audit Checklist: Module-Based Falsification
+
+If any single forbidden object listed below is empirically validated, the SOX framework is falsified. No cumulative justification is permitted.
+
+### 2.1 Audit of `Sox_Core` (Solvency)
+
+* **Statement:** Phase stability requires informational solvency (𝓘 < 1).
+* **Hard-Fail Condition:** Observation of a persistent macroscopic phase where erosion (Γ) is greater than or equal to restorative capacity (𝓔).
+
+### 2.2 Audit of `Sox_CarrierIndependence` (Invariance)
+
+* **Statement:** Phase stability is agnostic to the physical carrier.
+* **Hard-Fail Condition:** Two systems with identical integrity metrics but different carriers exhibit divergent phase stability.
+
+### 2.3 Audit of `Sox_Extensivity` (Scale)
+
+* **Statement:** Identity must scale superadditively with volume.
+* **Hard-Fail Condition:** A purported bulk phase remains stable only as a surface or local phenomenon.
+
+### 2.4 Audit of `Sox_Incompatibility` (Conflict)
+
+* **Statement:** Unmitigated volumetric noise is incompatible with solvency.
+* **Hard-Fail Condition:** A solvent phase permits volumetric integrity-threatening noise in its bulk without deploying any exclusion or boundary defense.
+
+**Scope Note (v1.31):**
+This audit applies to regimes of homogeneous coherence. Localized singularities or controlled technical breakdowns (e.g., vortices in Type-II superconductors) do not, by themselves, constitute falsification. These regimes are reserved for formal treatment in v1.4.
+
+### 2.5 Suggested Mapping of Variables
+
+To facilitate experimental audits without introducing phenomenological assumptions, the following correspondences are suggested as **operational correlates**, not definitions.
+
+| SOX Variable | Suggested Experimental Correlates |
+|-------------|----------------------------------|
+| **Erosion (Γ)** | Scattering rate (1/τ), spectral linewidth, thermal noise scale (kBT), transport relaxation times |
+| **Identity (𝓔)** | Phase stiffness (ρₛ), condensation energy, London penetration depth (λ) |
+| **Response** | Magnetic susceptibility (χ), resistivity (ρ), persistent current stability |
+
+The quantity **𝓔** is not defined by any single observable.  
+Phase stiffness (ρₛ) is listed as a privileged correlate because it directly quantifies the energetic cost of twisting the phase and therefore operationally reflects phase-restoring capacity.
+
+
+---
+
+## 3. The Ghost Phase Test (Ultimate Kill-Switch)
+
+> **If a system exhibits a macroscopic response (e.g., Meissner effect or zero resistance) while its internal information regime is demonstrably incoherent or insolvent, the SOX framework is falsified.**
+
+The burden of proof lies with the auditor to demonstrate that the observed response corresponds to a stable, extensive phase.
+
+---
+
+## 4. Resolution of Interpretative Conflicts
+
+In cases where experimental data and SOX logical predictions diverge, the auditor must prioritize **Information Integrity** over **Macroscopic Appearance**.
+
+### 4.1 Mechanical & Spatial Rigidity (Interpretative Boundary)
+
+Observations of mechanical forces associated with superconducting systems (including flux pinning, spatial locking, levitation stability, or resistance to applied gravitational or mechanical loads) are classified within SOX as **secondary electromagnetic reaction forces**.
+
+Such forces arise as consequences of phase stiffness and boundary defense mechanisms, but they do **not** constitute primary evidence of information solvency. They are neither indicators of gravitational shielding nor of modified inertia, mass reduction, or spacetime alteration.
+
+Any interpretation invoking "antigravity," "emergent gravitational forces," or "spacetime modification" represents a categorical error and lies outside the jurisdiction of SOX v1.31.
+
+### 4.2 Transient vs. Bulk Status
+
+A macroscopic response (e.g., perfect diamagnetism or mechanically stable pinning) that does not originate from a demonstrably solvent information regime is classified as a **Transient Anomaly**, not a Phase.
+
+The burden of proof lies with the observer to demonstrate that the state is extensive, scalable (V → ∞), and compliant with the Incompatibility Axiom.
+
+In cases where experimental data and SOX logical predictions diverge, **Information Integrity takes precedence over Macroscopic Appearance**. A perfect magnetic shield or zero-resistance signal that does not arise from a solvent information regime is, by definition in SOX v1.31, a *Transient Anomaly*, not a Phase. The observer must demonstrate that the anomaly is extensive, scalable, and compliant with the Incompatibility Axiom.
+
+---
+
+## 5. Academic Integrity & Metadata
+
+* **Version:** 1.31 (Canonical)
+* **DOI:** PENDING
+* **License:** Creative Commons Attribution–NoDerivatives 4.0
+* **Repository:** GitHub (canonical source)
+
+---
+
+### Final Statement
+
+This document constitutes a negative constitution. It does not seek confirmation; it specifies the conditions under which SOX must fail. If any forbidden object defined herein is realized in nature, the framework is invalidated in full.
+
+
